@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block css %}
+
+{% endblock %}
+
+
+{% block body %}
+<div class="d-flex flex-row" style="height:100%;">
+    <div class="row col-4">
+        <div class="d-flex flex-column">
+            <div class="'row">
+                <div class="pt-3">
+                    <h1 style="font-size: 50px; font-family: 'Bungee Outline', cursive;">Brain Tumor <br>Detection</h1>
+                </div>
+            </div>
+            <div class="row pt-5" style="font-family: 'Anton', sans-serif;">
+                <div class="d-flex flex-column" style="width: 100%; padding-left:50px;">
+                    <div class="row">
+                        <a class="menu" href="{% url 'home' %}">HOME</a>
+                    </div>
+                    <div class="row">
+                        <a class="menu" href="{% url 'about' %}">ABOUT</a>
+                    </div>
+                    <div class="row">
+                        <a class="menu" href="{% url 'credits' %}">CREDITS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row col-8 justify-content-center align-items-center">
+        <div class="d-flex flex-column justify-content-center align-items-center" style="font-family: 'Dancing Script', cursive; font-size: 50px;">
+            <div>
+               Shekhar Yadav
+            </div> 
+            <div>
+                Bickey Kumar Chaudhary
+            </div> 
+            <div>
+                Aman Kumar Sah
+            </div> 
+            <div>
+                Rahul Kumar Yadav
+            </div> 
+            <div>
+                Supervised by <span class="text-danger">Sneha N P</span> Maam.
+            </div> 
+        </div>
+    </div>
+    
+    
+</div>
+
+{% endblock %}
